@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>vitor</title>
+        <meta charset=UTF-8>
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <td align="right">Nome</td>
+                <td><input type="text" id="Nome" value="vitor"/></td>
+            </tr>
+            <tr>
+                <td align="right">Idade</td>
+                <td><input type="text" id="Idade" value="19"/></td>
+            </tr>
+            <tr>
+                <td align="right"><input type="button" id="salvar" value="Salvar"/></td>
+                <td><input type="button" value="Cancelar"/></td>
+            </tr>
+        </table>
+        <script>
+            function validarValor(){
+                //let objetoInputNome = document.getElementById("Nome");
+                //let objetoInputNome = document.querySelector("#Nome");
+                let objetoInputNome = document.querySelector("input");
+                //console.log( objetoInputNome.value );
+                //console.log( objetoInputNome.value.length );
+                if( objetoInputNome.value.length > 0 ){
+                    console.log("validado");
+                    objetoInputNome.style.backgroundColor="green";
+                }
+                else{
+                    console.log("invalido");
+                    objetoInputNome.style.backgroundColor="red";
+                }
+            }
+
+            //document.getElementsByTagName("input")[2]
+            //document.getElementById("salvar")
+                //.addEventListener("click", validarValor);
+            //document.querySelector("#salvar")
+                //.addEventListener("click", validarValor);
+            document.querySelector("input[type=button]")
+                .addEventListener("click", validarValor);
+        </script>
+    </body>
+</html>
