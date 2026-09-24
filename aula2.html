@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Usando variaveis</title>
+    </head>
+    <body>
+        <script>
+            let var1 = 25;
+            let var2 = 17;
+            let varAdicao = var1 + var2;
+            let varSubtracao = var1 - var2;
+            let varMultiplicacao = var1 * var2;
+            let varDivisao = var1 / var2;
+            let varResto = var1 % var2; // modulo
+            console.log(var1, var2, varAdicao, varDivisao, varMultiplicacao, varSubtracao, varResto);
+            // condicional if
+            if( var2 >= 18 ){
+                console.log("pega carteira de moto");
+            } else ( var2 < 18 ) 
+                console.log("NÃO");
+            // condicional switch-case
+            var1 = 10
+            switch ( var1 ) {
+                case 10:
+                    console.log("dez");
+                case 15:
+                    console.log("quinze");
+                case 17:
+                    console.log("desessete");
+                case 25:
+                    console.log("vinte e cinco");
+                default:
+                    console.log( "valor não encontrado" );
+            }
+        </script>
+    </body>
+</html>
