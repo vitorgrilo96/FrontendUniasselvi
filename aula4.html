@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Tabuleiro</title>
+    </head>
+    <body>
+        <script>
+            let tabela = document.createElement('table');
+            document.body.appendChild( tabela );
+            for( let i=0; i<8; i=i+1 ){
+                let linha = document.createElement('tr');
+                tabela.appendChild( linha );
+                for( let j=0; j<8; j=j+1 ){
+                    let coluna = document.createElement('td');
+                    coluna.style.border = '1px solid black';
+                    coluna.style.width = '50px';
+                    coluna.style.height = '50px';
+                    if( (i+j) % 2 == 0 ){
+                        coluna.style.backgroundColor = 'black';
+                    }
+                    else{
+                        coluna.style.backgroundColor = 'white';
+                    }
+                    linha.appendChild( coluna );
+                }
+            }
+        </script>
+    </body>
+</html>
